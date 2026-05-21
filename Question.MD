@@ -11,7 +11,7 @@
 ## 2. 素材
 
 - 答案卷：`Answer.MD`，作答方式請依照答案卷為主。
-- 刪除 Git 資料夾的批次檔：`delete_git.bat`，請在 Clone 後執行此批次檔來刪除現有的 Git 資料夾。
+- 刪除 Git 資料夾的批次檔：`delete_git.ps1`，請在 Clone 後執行此批次檔來刪除現有的 Git 資料夾。
 - 測試資料： `input_test.txt` 裡面有可以複製的輸入資料，請用來多多測試程式執行正確，提供您在執行 `messy_tracker.py` 時使用的
 - 原始程式碼： `messy_tracker.py`
 - 題目卷：`Question.MD`
@@ -23,7 +23,7 @@
 
 1. 安裝 Git 並設定 GitHub 帳號。
 2. 安裝 VSCode 並安裝 GitHub Copilot Extension。
-3. Clone 此專案到本地，並執行 `delete_git.bat` 來刪除現有的 Git 資料夾。
+3. Clone 此專案到本地，並執行 `delete_git.ps1` 來刪除現有的 Git 資料夾。
 4. 在 VSCode 中打開專案資料夾，並熟悉專案結構與內容。
 5. 建立一個檔案 `refined_tracker.py` 用來放置修改後的程式碼
 6. 執行看看 `messy_tracker.py` 的執行結果，測試是否執行正常

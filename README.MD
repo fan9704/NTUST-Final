@@ -20,7 +20,7 @@ Ctrl + i
 
 ### Git 操作
 
-當你 Clone 完專案後，請在專案資料夾裡面執行 `delete_git.bat`，這個批次檔會刪除原本的 Git 資料夾。
+當你 Clone 完專案後，請在專案資料夾裡面執行 `delete_git.ps1`，這個批次檔會刪除原本的 Git 資料夾。
 
 接下來請你自己 init 變成你的 git repository
 
@@ -28,7 +28,7 @@ Ctrl + i
 
 ```shell
 git clone <專案連結> # Clone Repository
-./delete_git.bat # 執行 delete_git.bat 來刪除現有的 Git 資料夾
+./delete_git.ps1 # 執行 delete_git.ps1 來刪除現有的 Git 資料夾
 git init # 初始化 Git Repository
 git config set user.name "你的名字" # 設定 Git 使用者名稱
 git config set user.email "你的電子郵件" # 設定 Git 使用者電子郵件
