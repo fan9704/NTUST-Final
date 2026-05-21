@@ -10,19 +10,29 @@
 
 ## 2. 素材
 
-- 原始程式碼： `messy_tracker.py`
+- 答案卷：`Answer.MD`，作答方式請依照答案卷為主。
+- 刪除 Git 資料夾的批次檔：`delete_git.bat`，請在 Clone 後執行此批次檔來刪除現有的 Git 資料夾。
 - 測試資料： `input_test.txt` 裡面有可以複製的輸入資料，請用來多多測試程式執行正確，提供您在執行 `messy_tracker.py` 時使用的
-- 你需要建立一個檔案 `refined_tracker.py` 用來放置修改後的程式碼
-- 請根據你的操作進行 `git` 版本控制
-- `Question.MD` 題目卷，`ANSWER.MD` 作答卷，作答方式請依照答案卷為主。
+- 原始程式碼： `messy_tracker.py`
+- 題目卷：`Question.MD`
+- 提示文件：`README.MD`。
 
 ## 3. 實作任務與步驟
+
+### 第零階段：環境準備（Preparation）
+
+1. 安裝 Git 並設定 GitHub 帳號。
+2. 安裝 VSCode 並安裝 GitHub Copilot Extension。
+3. Clone 此專案到本地，並執行 `delete_git.bat` 來刪除現有的 Git 資料夾。
+4. 在 VSCode 中打開專案資料夾，並熟悉專案結構與內容。
+5. 建立一個檔案 `refined_tracker.py` 用來放置修改後的程式碼
+6. 執行看看 `messy_tracker.py` 的執行結果，測試是否執行正常
 
 ### 第一階段：代碼審核 (Code Audit)
 
 1. 請在 VSCode 中開啟 `messy_tracker.py`。
 2. 使用 GitHub Copilot Chat 功能分析程式碼。
-3. 在 `ANSWER.md` 中完成「變數與邏輯對照表」，找出神祕變數 a, b, cate_dict 的真實商業意義。
+3. 在 `Answer.md` 中完成「變數與邏輯對照表」，找出神祕變數 a, b, cate_dict 的真實商業意義。
 4. 診斷出 5 個以上的「代碼壞味道」，並說明為何這些設計會造成維護困難。
 
 ### 第二階段：Vibe-Coding 重構 (Refactor)
@@ -33,9 +43,15 @@
     - 格式升級： 捨棄 txt 混亂格式，改用 json 格式儲存。
     - 強健性： 增加對使用者輸入與檔案讀取的錯誤處理 (Try-Except)。
     - 優化： 修正原程式每次新增資料都要存檔的低效率行為。
-3. 紀錄： 在 `ANSWER.md` 紀錄你使用的 3 個關鍵 Prompt 以及 AI 出錯後的修正對話。
+3. 紀錄： 在 `Answer.md` 紀錄你使用的 3 個關鍵 Prompt 以及 AI 出錯後的修正對話。
 
-### 第三階段：版本控制 (Git & GitHub)
+### 第三階段：測試與驗證 (Testing & Validation)
+
+1. 執行 `refined_tracker.py`，確保功能正確。
+2. 輸入 `show` 指令，確認資料清單能正確顯示。
+3. 確認 `records.json` 的格式正確，並貼上前幾行內容到 `Answer.md`。
+
+### 第四階段：版本控制 (Git & GitHub)
 
 1. 在本地初始化 Git 倉庫
 2. 開發過程中需有 Commit，紀錄你的開發進度。
